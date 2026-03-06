@@ -3,129 +3,258 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Quran App Privacy Policy</title>
+    <title>The Quran App</title>
+    <meta
+      name="description"
+      content="The Quran App is a clean, offline-first Quran reading experience focused on clarity, speed, and focus."
+    />
     <style>
       :root {
-        color-scheme: light;
+        --bg: #f4f7f6;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #4b5563;
+        --line: #dbe3e1;
+        --brand: #0f766e;
+        --brand-soft: #ccfbf1;
+        --brand-2: #0ea5a4;
+        --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
-        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-        background: #f5f6f7;
-        color: #1b1f23;
+        font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 500px at 10% -10%, #d9f3ef 0%, transparent 55%),
+          radial-gradient(1200px 500px at 90% -20%, #dbeafe 0%, transparent 52%),
+          var(--bg);
       }
-      main {
-        max-width: 880px;
-        margin: 40px auto;
-        padding: 28px 24px;
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        line-height: 1.6;
+
+      .wrap {
+        width: min(1080px, 92vw);
+        margin: 0 auto;
       }
-      h1, h2 {
-        line-height: 1.25;
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(8px);
+        background: rgba(244, 247, 246, 0.78);
+        border-bottom: 1px solid rgba(219, 227, 225, 0.8);
       }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+      }
+
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+
+      .nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 20px;
+      }
+
+      .hero {
+        padding: 72px 0 44px;
+      }
+
+      .hero-card {
+        background: linear-gradient(140deg, #ffffff, #f0fdfa 70%);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+        padding: clamp(24px, 5vw, 48px);
+      }
+
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--brand-soft);
+        color: #115e59;
+        border: 1px solid #99f6e4;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
       h1 {
-        margin-top: 0;
+        margin: 16px 0 10px;
+        font-size: clamp(32px, 6vw, 52px);
+        line-height: 1.05;
+        letter-spacing: -0.5px;
       }
-      ul {
-        margin-top: 0;
+
+      .lead {
+        max-width: 760px;
+        color: var(--muted);
+        font-size: clamp(16px, 2.3vw, 20px);
+        line-height: 1.55;
+        margin: 0;
       }
-      .muted {
-        color: #6b7280;
+
+      .cta-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 24px;
       }
-      a {
-        color: #0b57d0;
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        padding: 11px 16px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        border: 1px solid transparent;
+      }
+
+      .btn-primary {
+        background: var(--brand);
+        color: #fff;
+      }
+
+      .btn-secondary {
+        background: #fff;
+        color: var(--text);
+        border-color: var(--line);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .tile {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 16px;
+      }
+
+      .tile h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      .tile p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      section {
+        padding: 18px 0 44px;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+      }
+
+      .panel h2 {
+        margin: 0 0 10px;
+        font-size: 22px;
+      }
+
+      .panel p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      footer {
+        padding: 26px 0 44px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 880px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: March 6, 2026</p>
+    <header>
+      <div class="wrap nav">
+        <div class="brand">The Quran App</div>
+        <nav>
+          <a href="/TheQuranApp/">Home</a>
+          <a href="/TheQuranApp/privacy-policy/">Privacy Policy</a>
+          <a href="https://github.com/NoorDevelopment/TheQuranApp/issues">Support</a>
+        </nav>
+      </div>
+    </header>
 
-      <h2>Overview</h2>
-      <p>
-        This Privacy Policy explains how <strong>The Quran App</strong> ("the app")
-        handles information. The app is designed to work primarily offline and
-        does not require account creation.
-      </p>
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="kicker">Offline First · Clean Reader</div>
+          <h1>Read Quran with focus, clarity, and no clutter.</h1>
+          <p class="lead">
+            The Quran App is designed for calm reading. Fast navigation, smooth highlights,
+            and a distraction-free interface built for daily recitation and review.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/TheQuranApp/privacy-policy/">View Privacy Policy</a>
+            <a class="btn btn-secondary" href="https://github.com/NoorDevelopment/TheQuranApp/issues">Contact Support</a>
+          </div>
 
-      <h2>Information We Collect</h2>
-      <p>
-        We do not directly collect personal information such as name, email,
-        phone number, or precise location through the app itself.
-      </p>
-      <p>The app stores reading-related data locally on your device, such as:</p>
-      <ul>
-        <li>bookmarks</li>
-        <li>reading position (last page)</li>
-        <li>settings and preferences</li>
-        <li>highlight data</li>
-      </ul>
-      <p>
-        This local data stays on your device unless you delete the app/device
-        data.
-      </p>
+          <div class="grid">
+            <article class="tile">
+              <h3>Offline Reading</h3>
+              <p>Core reading flow is built to work without persistent internet usage.</p>
+            </article>
+            <article class="tile">
+              <h3>Fast Navigation</h3>
+              <p>Quick page movement and focused controls for uninterrupted recitation.</p>
+            </article>
+            <article class="tile">
+              <h3>Private by Design</h3>
+              <p>No account required. Reading preferences remain on your own device.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-      <h2>Internet Access</h2>
-      <p>
-        The app may use internet access to download optional Quran page image
-        packages ("Mushaf assets") from official release links so you can read
-        them offline later. These downloads are handled by standard Android
-        system/network components.
-      </p>
-
-      <h2>Third-Party Services</h2>
-      <p>The app does not use third-party advertising SDKs.</p>
-      <p>The app does not require sign-in.</p>
-      <p>
-        If the app is distributed through Google Play, Google may process
-        technical and diagnostic data under its own policies.
-      </p>
-
-      <h2>Data Sharing</h2>
-      <p>We do not sell your personal data.</p>
-      <p>
-        We do not share personal data with third parties because the app does
-        not directly collect personal user profiles.
-      </p>
-
-      <h2>Data Retention and Deletion</h2>
-      <p>
-        User data created in the app (bookmarks, highlights, settings,
-        downloaded assets) is kept on your device until you remove it.
-      </p>
-      <p>You can delete this data by:</p>
-      <ul>
-        <li>clearing app storage in Android settings, or</li>
-        <li>uninstalling the app</li>
-      </ul>
-
-      <h2>Children</h2>
-      <p>
-        The app is general-audience religious/educational software and does not
-        knowingly collect personal information from children.
-      </p>
-
-      <h2>Security</h2>
-      <p>
-        We use reasonable measures appropriate to an offline-first app design.
-        No method of storage or transmission is guaranteed to be 100% secure.
-      </p>
-
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. The "Last updated"
-        date will reflect the latest revision.
-      </p>
-
-      <h2>Contact</h2>
-      <p>
-        Developer: Noor Development<br />
-        Contact: <a href="https://github.com/NoorDevelopment/TheQuranApp/issues">GitHub Issues</a>
-      </p>
+      <section>
+        <article class="panel">
+          <h2>Privacy and Transparency</h2>
+          <p>
+            We keep the policy straightforward. The dedicated privacy page explains what
+            is stored locally, what network access is used for, and how you can remove data.
+          </p>
+        </article>
+      </section>
     </main>
+
+    <footer class="wrap">
+      © 2026 Noor Development
+    </footer>
   </body>
 </html>
